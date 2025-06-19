@@ -1,6 +1,5 @@
 # WSL-DOCKER-
 🐧 How to Use WSL and Docker on Windows or Linux for Cybersecurity Labs
-WSL-DOCKER: How to Use WSL and Docker on Windows or Linux for Cybersecurity Labs
 
 This guide shows how to:
 
