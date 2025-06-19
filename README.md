@@ -20,7 +20,7 @@ This guide shows how to:
 
 ---
 
-## ✅ For Windows Users
+##  For Windows Users
 
 ### 1. Turn on needed features
 
@@ -31,4 +31,24 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 Then restart your computer.
 
-### Install WSL and Ubuntu
+### 2. Install WSL and Ubuntu
+
+After reboot, run:
+
+```powershell
+wsl --install --no-distribution
+wsl --set-default-version 2
+
+Then open the Microsoft Store.
+Search for Ubuntu 22.04, install it, and launch it.
+Set a Linux username and password.
+
+ ### 3: Install Docker Desktop for Windows
+Download Docker: https://www.docker.com/products/docker-desktop
+
+During setup:
+Choose WSL 2 as the backend
+Enable integration with your Ubuntu distro
+After install, open Ubuntu terminal and test Docker:
+
+docker --version
