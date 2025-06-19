@@ -10,7 +10,7 @@ This guide shows how to:
 
 ---
 
-## 💻 Why Use WSL and Docker?
+## Why Use WSL and Docker?
 
 * Run Linux tools on Windows without VirtualBox
 * Easily reset and manage isolated cybersecurity labs
@@ -19,7 +19,7 @@ This guide shows how to:
 
 ---
 
-## 🪟 For Windows Users
+## For Windows Users
 
 ### 1. Enable Required Features
 
@@ -30,7 +30,7 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 
-➡️ **Then restart your computer.**
+**Then restart your computer.**
 
 ---
 
@@ -42,7 +42,7 @@ After reboot, run:
 wsl --install
 ```
 
-> ✅ This will auto-install Ubuntu (default is Ubuntu 22.04) and set up WSL 2.
+> This will auto-install Ubuntu (default is Ubuntu 22.04) and set up WSL 2.
 
 If not, you can manually install Ubuntu:
 
@@ -68,7 +68,7 @@ docker --version
 
 ---
 
-✅ You're now ready to:
+You're now ready to:
 
 * Pull and run SIEM/security tools like Suricata, Zeek, Wazuh, ELK
 * Build custom incident detection labs
@@ -76,7 +76,7 @@ docker --version
 
 ---
 
-## 🔒 Example: Run Suricata
+## Example: Run Suricata
 
 ```bash
 docker pull jasonish/suricata
